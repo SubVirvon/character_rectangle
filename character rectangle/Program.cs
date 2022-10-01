@@ -13,6 +13,7 @@ namespace character_rectangle
             string word;
             char symbol;
             int frameLenght;
+            int angleframe = 2;
             int frameHeight = 3;
             int inderTop = 3;
             int inderLeft = 1;
@@ -22,7 +23,7 @@ namespace character_rectangle
             Console.Write("Введите симвл: ");
             symbol = Convert.ToChar(Console.ReadLine());
 
-            frameLenght = word.Length + 2;
+            frameLenght = word.Length + angleframe;
 
             for(int i = 0; i < frameLenght; i++)
             {
